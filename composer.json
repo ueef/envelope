@@ -1,6 +1,7 @@
 {
   "name": "ueef/envelope",
   "type": "library",
+  "license": "MIT",
   "description": "",
   "require": {
     "php": ">=7.1",
