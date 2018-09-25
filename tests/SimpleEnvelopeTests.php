@@ -4,16 +4,14 @@ declare(strict_types=1);
 namespace Ueef\Envelope\Tests;
 
 use Ueef\Envelope\Tests\Stubs\Enveloped;
-use Ueef\Envelope\Envelopes\MapEnvelope;
+use Ueef\Envelope\Envelopes\SimpleEnvelope;
 
-class MapEnvelopeTests extends \PHPUnit\Framework\TestCase
+class SimpleEnvelopeTests extends \PHPUnit\Framework\TestCase
 {
     public function test()
     {
         $proto = new Enveloped();
-        $envelope = new MapEnvelope([
-            'test' => $proto,
-        ]);
+        $envelope = new SimpleEnvelope();
 
         $item = new $proto(1,2,3);
         $packed = $envelope->pack($item);

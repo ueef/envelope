@@ -13,6 +13,11 @@
       "Ueef\\Envelope\\": "src"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Ueef\\Envelope\\Tests\\": "tests"
+    }
+  },
   "require-dev": {
     "phpunit/phpunit": "^7"
   }
